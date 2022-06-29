@@ -10,7 +10,7 @@ function descuentoPromo (){
    let despPromo = calcularTotal()
    let descFinal = despPromo/1.1
    alert("El monto con descuento por promocion es = $"+descFinal.toFixed(2))
-   return despPromo
+   return descFinal
 }
 
 descuentoPromo()
