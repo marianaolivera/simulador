@@ -1,10 +1,11 @@
-let cantidad =parseInt(prompt("Ingrese cantidad de laminas:"))
+let cantidad =parseInt(prompt("Ingrese cantidad de laminas:")) /* El cliente coloca la cantidad de laminas que desea comprar*/ 
 function calcularTotal (){
    let total = cantidad*2000
-   alert("el monto total es =$"+total)
+   alert("El monto total es =$"+total)
    return total
 
 }
+/*Esta función multiplica la cantidad de laminas que desa comprar el cliente por el monto del producto*/ 
 
 function descuentoPromo (){
    let despPromo = calcularTotal()
@@ -12,5 +13,6 @@ function descuentoPromo (){
    alert("El monto con descuento por promocion es = $"+descFinal.toFixed(2))
    return descFinal
 }
+/*La función hace el descuento del 10 % sobre el monto total*/
 
 descuentoPromo()
