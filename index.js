@@ -1,11 +1,16 @@
-let cantidad,precio,desc,compra,pagar
+let cantidad =parseInt(prompt("Ingrese cantidad de laminas:"))
+function calcularTotal (){
+   let total = cantidad*2000
+   alert("el monto total es =$"+total)
+   return total
 
-precio = parseFloat(prompt("Ingresar precio"))
-cantidad = parseFloat(prompt("Ingresar cantidad"))
+}
 
-compra = precio*cantidad
-desc = compra*0.15
-pagar = compra-desc
+function descuentoPromo (){
+   let despPromo = calcularTotal()
+   let descFinal = despPromo/1.1
+   alert("El monto con descuento por promocion es = $"+descFinal.toFixed(2))
+   return despPromo
+}
 
-alert("El desceunto es: "+desc)
-alert("El total a pagar es: "+pagar)
+descuentoPromo()
